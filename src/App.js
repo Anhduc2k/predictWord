@@ -26,7 +26,7 @@ function App() {
             return 3;
           } else {
             setCurrent((prev) => {
-              if (prev + 1 === wordsLengthRef.current - 1) {
+              if (prev === wordsLengthRef.current - 1) {
                 setWin(true);
                 return prev;
               }
